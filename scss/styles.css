@@ -630,6 +630,7 @@ section {
 #contact:hover {
   -webkit-transition: 2s;
   transition: 2s;
+  background-color: #BFB5AF;
 }
 
 #contact .icons {
@@ -648,8 +649,8 @@ section {
 
 #contact .icons .fab, #contact .icons .fas {
   opacity: 0.6;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   text-decoration: none;
   color: #1A1B1E;
 }
@@ -657,8 +658,9 @@ section {
 #contact .icons .fab:hover, #contact .icons .fas:hover {
   opacity: 0.9;
   cursor: pointer;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: white;
 }
 
 @media screen and (min-width: 768px) {

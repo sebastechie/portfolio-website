@@ -563,12 +563,12 @@ section {
     box-sizing: border-box;
     // background-color: #141414;
     // background-image: linear-gradient(to left, #EEEAEA 50%, #FFFFFF);
-    background-color: #EEEAEA;
+    background-color: #EEEAEA;    
     transition: 2s;
 
     &:hover {
         transition: 2s;
-        // background-color: blue;
+        background-color: #BFB5AF;
     }
 
     .icons{
@@ -581,14 +581,15 @@ section {
 
         .fab, .fas {
             opacity: 0.6;
-            transition: 0.4s;
+            transition: 0.3s;
             text-decoration: none;
             color: #1A1B1E;
 
             &:hover {
                 opacity: 0.9;
                 cursor: pointer;
-                transition: 0.5s;
+                transition: 0.3s;
+                color: white;
             }
         }
     }
