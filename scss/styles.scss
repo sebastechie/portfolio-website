@@ -48,7 +48,7 @@ nav {
         
             a {
                 color: aliceblue;
-                transition: all 0.5s ease 0s;
+                transition: all 0.3s ease 0s;
                 font-weight: 800;
             }
 
@@ -133,7 +133,6 @@ section {
         .about-tag {
             .about-a {
                 .head-tag {
-                    
                     h1 {
                         color: grey;;
                         margin: 40px 0;
@@ -156,7 +155,6 @@ section {
                 display: flex;
                 flex-direction: row-reverse;
                 margin: 80px 0;
-
 
                 img {
                     width: 150px;
@@ -252,57 +250,57 @@ section {
         }
     }
 
-        .frame {
-            border-top: 0.5px solid darkgray;
-            border-bottom: 0.5px solid darkgray;
-            padding: 20px;
+    .frame {
+        border-top: 0.5px solid darkgray;
+        border-bottom: 0.5px solid darkgray;
+        padding: 20px;
+        width: 100%;
+        align-items: center;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+        margin: 100px 0 300px 0;
+
+        .websitelink-mobile {
+            height: 70px;
             width: 100%;
-            align-items: center;
             display: flex;
-            align-items: flex-start;
-            justify-content: flex-end;
-            margin: 100px 0 300px 0;
+            align-items: center;
+            border-left: none;
+            border-right: none;
+            transition: 0.5s;
+            padding: 10px;
+            transition: 0.5s;
 
-            .websitelink-mobile {
-                height: 70px;
-                width: 100%;
-                display: flex;
-                align-items: center;
-                border-left: none;
-                border-right: none;
-                transition: 0.5s;
-                padding: 10px;
-                transition: 0.5s;
-
-                a {
-                    text-decoration: none;
-                    color: white;
-                    text-align: center;
-                    border: 0.5px solid white;
-                    padding: 7px;
-                }
+            a {
+                text-decoration: none;
+                color: white;
+                text-align: center;
+                border: 0.5px solid white;
+                padding: 7px;
             }
-
-            .websitelink-mobile:nth-child(2) {
-                a {
-                    color: black;
-                    background-color: white;
-                    width: 100%;
-                }
-            }
-
-            .websitelink-desktop {
-                display: none;
-            }    
         }
+
+        .websitelink-mobile:nth-child(2) {
+            a {
+                color: black;
+                background-color: white;
+                width: 100%;
+            }
+        }
+
+        .websitelink-desktop {
+            display: none;
+        }    
     }
+}
 
 /* ======================  SECTION 3 =================================================== */
 
 .section3 {
     display: flex;
     width: 100%;
-    padding-top: 100px;
+    padding-top: 200px;
 
     .headline3 {
         height: 100%;
@@ -313,7 +311,7 @@ section {
 
         .project-title {
             border-top: 1px solid black;
-            margin: 50px 0 200px 0;
+            margin: 50px 0 300px 0;
             height: 50px;
             width: 100%;
             display: flex;
@@ -346,6 +344,7 @@ section {
             font-family: 'Arial Narrow Bold', sans-serif;
             padding: 20px 40px;
             letter-spacing: 5px;
+            // bordeR: 2px solid red;
         }
     }
 }
@@ -484,7 +483,6 @@ section {
     }
 }
 
-
 /* ====================== FOOTER =================================================== */
 
 #contact {
@@ -551,23 +549,23 @@ section {
     nav {
         z-index: 1;
         height: 20px;
-        margin-top: 30px;
+        margin-top: 60px;
 
         div {
             height: 100%;
             width: 100%;
                 
             li {
-                font-size: 16px;
+                font-size: 20px;
                 letter-spacing: 3px;
 
                 a {
                    padding: 5px; 
 
                     &:hover {
-                        color: white;
-                        background-color: rgba(0,0,0, 0.3);
                         padding: 5px;
+                        color: black;
+                        background-color: white;
                     }
                 }   
             }
@@ -603,6 +601,7 @@ section {
                 top: 100;
                 z-index: -1;
                 display: flex;
+                top: 40;
         
                 div {
                     font-family: 'Montserrat', sans-serif;
@@ -615,7 +614,7 @@ section {
             .tagline {
                 letter-spacing: 3px;
                 position: absolute;
-                top: 600;
+                top: 550;
                 font-family: 'Julius Sans One', sans-serif;
                 letter-spacing: 6px;
                 z-index: -1;
@@ -674,7 +673,7 @@ section {
                     }
 
                     .tag {
-                        font-size: 15px;
+                        font-size: 18px;
                         letter-spacing: 0.8px;
                         font-family: 'DM sans', cursive;
                     }
@@ -834,20 +833,20 @@ section {
             }
 
             .frame {
-                height: 300px;
+                height: 400px;
                 display: flex;
-                align-items: flex-end;
+                align-items: center;
                 margin-top: 100px;
+                margin-bottom: 0;
                 border: none;
+                background-image: linear-gradient(to top left, #FFFFFF 50%, #1A1B1E 50%);
 
                 .site-container {
-                    height: 100%;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: flex-end;
-                    justify-content: flex-end;
-                    width: 60%;
-                    background-color: rgba(0,0,0, 0.4);
+                    height: 40%;
+                    // width: 60%;
+                    // min-width: 60%;
+                    padding: 0 10px;
+                    background-color: darkslategrey;
                     
                     .websitelink-mobile {
                         display: none;
@@ -855,6 +854,8 @@ section {
 
                     .websitelink-desktop {
                         display: flex;
+                        width: 100%;
+                        height: 100%;
                         justify-content: space-between;
                         font-size: 60px;
                         font-family: 'DM sans', cursive;
@@ -863,7 +864,6 @@ section {
                         color: white;
                         transition: 0.7s;
                         text-align: right;
-                        margin: 0 5px;
 
                         &:hover {
                             background-color: white;
@@ -884,46 +884,26 @@ section {
         width: 100%;
         padding-top: 300px;
         height: 900px;
+        margin-bottom: 200px;
 
         .headline3 {
             height: 80%;
             width: 80%;
-            display: flex;
-            flex-direction: column;
     
             .project-title {
-                margin: 90px 0 200px 0;
-                height: 50px;
-                width: 100%;
-                display: flex;
-                flex-direction: row-reverse;
-                align-items: center;
+                margin: 90px 0 400px 0;
                 font-size: 50px;
-                letter-spacing: 3px;
+                letter-spacing: 7px;
             }
             
             .project-list {
-                font-size: 52px;
-                display: flex;
-                justify-content: flex-start;
-                width: 30%;
-                height: 7%;
-                align-items: flex-end;
-                font-family: 'Arial Narrow Bold', sans-serif;
-                font-weight: 600;
-                padding: 20px 40px;
+                font-size: 60px;
+                margin: 10px 0;
             }
     
             .see-below {
-                font-size: 16px;
-                display: flex;
-                justify-content: flex-start;
-                width: 60%;
-                height: 7%;
-                align-items: center;
-                font-family: 'Arial Narrow Bold', sans-serif;
-                padding: 20px 40px;
-                letter-spacing: 5px;
+                font-size: 19px;
+                margin: 30px 0;
             }
         }
     }
