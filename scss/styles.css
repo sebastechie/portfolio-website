@@ -34,6 +34,7 @@ nav {
   font-family: 'Noto sans', cursive;
   z-index: 1;
   position: relative;
+  margin-top: 10%;
 }
 
 nav div {
@@ -61,7 +62,7 @@ nav ul li {
   color: aliceblue;
   text-decoration: none;
   font-size: 13px;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
 }
 
 nav ul li a {
@@ -72,7 +73,6 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: yellowgreen;
   text-decoration: none;
   background-color: none;
 }
@@ -992,6 +992,7 @@ section {
     margin: 0;
     padding: 0;
     border-radius: 0;
+    border: none;
   }
   .section2 .about-container1 .contain2 .else-contain .inner .right:hover {
     width: 100%;
@@ -1040,31 +1041,13 @@ section {
     -webkit-transition: 1s;
     transition: 1s;
     height: 100%;
+    cursor: default;
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
   }
-  .section2 .about-container1 .contain2 .else-contain .inner .right .skillsContain:hover .fa-html5 {
-    color: #DE4B25;
-    -webkit-transition: 1s;
-    transition: 1s;
-  }
-  .section2 .about-container1 .contain2 .else-contain .inner .right .skillsContain:hover .fa-sass {
-    color: #CE6B9F;
-    -webkit-transition: 1s;
-    transition: 1s;
-  }
-  .section2 .about-container1 .contain2 .else-contain .inner .right .skillsContain:hover .fa-js {
-    color: #F0D91C;
-    -webkit-transition: 1s;
-    transition: 1s;
-  }
-  .section2 .about-container1 .contain2 .else-contain .inner .right .skillsContain:hover .fa-terminal {
-    color: #74B05D;
-    -webkit-transition: 1s;
-    transition: 1s;
-  }
-  .section2 .about-container1 .contain2 .else-contain .inner .right .skillsContain:hover .fa-react {
-    color: #53C0DE;
-    -webkit-transition: 1s;
-    transition: 1s;
+  .section2 .about-container1 .contain2 .else-contain .inner .right .skillsContain:hover {
+    -webkit-filter: grayscale(0%);
+            filter: grayscale(0%);
   }
   .section2 .about-container1 .contain2 .else-contain .inner .right .skillsContain .fab, .section2 .about-container1 .contain2 .else-contain .inner .right .skillsContain .fas {
     font-size: 50px;
@@ -1124,14 +1107,6 @@ section {
     color: #191A1E;
     -webkit-transition: 0.7s;
     transition: 0.7s;
-  }
-  /* ======================  BORDERBREAK =================================================== */
-  .borderbreak {
-    height: 400px;
-    width: 100%;
-    background-color: orange;
-    border: 2px dashed black;
-    display: none;
   }
   /* ======================  SECTION 3 =================================================== */
   .section3 {
