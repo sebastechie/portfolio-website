@@ -874,8 +874,8 @@ section {
     cursor: none;
   }
   .section2 .about-container1 .contain2 .else-contain {
-    height: 700px;
-    width: 1200px;
+    height: 600px;
+    width: 1100px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
