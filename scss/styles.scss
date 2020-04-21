@@ -96,7 +96,7 @@ section {
         font-family: "Poiret One", cursive;
         color: aliceblue;
         letter-spacing: 2px;
-        font-size: 18px;
+        font-size: 21px;
         display: flex;
         justify-content: center;
         padding-bottom: 20px;
@@ -106,6 +106,32 @@ section {
 
         .tag {
             text-align: center;
+        }
+    }
+
+    .scroll {
+        z-index: 20;
+        font-size: 18px;
+        color: aliceblue;
+        width: 100%;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 620;
+
+        .scrollarrow {
+            color: yellow;
+            margin: 0 8px;
+            animation: blink 1s linear infinite;
+            font-size: 21px;
+        }
+    }
+
+    @keyframes blink {
+        50% {
+            opacity: 0;
         }
     }
 }
@@ -243,7 +269,8 @@ section {
                         }
                     }
 
-                    .fab, .fas {
+                    .fab,
+                    .fas {
                         margin: 30px 30px;
                     }
                 }
@@ -415,7 +442,8 @@ section {
                     font-size: 15px;
                     flex-direction: column;
 
-                    .pro-title, .code {
+                    .pro-title,
+                    .code {
                         font-size: 17px;
                         font-family: "DM sans", cursive;
                         font-weight: 1000;
@@ -508,7 +536,8 @@ section {
         align-items: center;
         justify-content: space-evenly;
 
-        .fab, .fas {
+        .fab,
+        .fas {
             opacity: 0.6;
             transition: 0.3s;
             text-decoration: none;
@@ -556,11 +585,10 @@ section {
             justify-content: center;
             align-items: flex-end;
             margin: 0;
-            
+
             li {
                 font-size: 90px;
                 letter-spacing: 3px;
-                color: red;
 
                 a {
                     padding: 5px;
@@ -601,12 +629,12 @@ section {
             .headline {
                 height: 70%;
                 width: 100%;
-                min-width: 87==70%;
+                min-width: 80%;
                 position: absolute;
                 z-index: -1;
                 display: flex;
                 flex-direction: column;
-                top: 110;
+                top: 180;
 
                 div {
                     font-family: "Montserrat", sans-serif;
@@ -619,11 +647,47 @@ section {
             .tagline {
                 letter-spacing: 3px;
                 position: absolute;
-                top: 500;
+                top: 570;
                 font-family: "Julius Sans One", sans-serif;
                 letter-spacing: 6px;
                 z-index: -1;
                 font-size: 2rem;
+            }
+        }
+
+        .scrollwrap {
+            // border: 2px solid blue;
+            width: 100%;
+            min-width: 1200px;
+            height: 100%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .scroll {
+            // border: 2px solid yellow;
+            width: 300px;
+            top: 500;
+            transform: rotate(270deg);
+            transition: 0.5s;
+
+            &:hover {
+                .scrollarrow {
+                    color: blue;
+                    transform: rotate(270deg);
+                    transition: 0.5s;
+                }
+            }
+
+            .scrolltext {
+                // border: 2px solid aqua;
+                letter-spacing: 10px;
+            }
+
+            .scrollarrow {
+                // border: 2px solid red;
+                transform: rotate(90deg);
             }
         }
     }
@@ -637,13 +701,6 @@ section {
         padding: 0;
         background-color: #1a1b1e;
         border-radius: 0;
-        filter: grayscale(100%);
-        transition: 0.3s;
-
-        &:hover {
-            filter: grayscale(0%);
-            transition: 0.3s;
-        }
 
         .about-container1 {
             justify-content: flex-start;
@@ -653,7 +710,7 @@ section {
                 align-items: center;
                 justify-content: flex-start;
                 padding-top: 200px;
-                background-image: linear-gradient(to top right, #191A1E 83%, #32424E 14%);
+                background-image: linear-gradient(to top right, #191a1e 83%, #32424e 14%);
 
                 .about-tag {
                     width: 70%;
@@ -668,6 +725,7 @@ section {
                     border-left: 8px solid black;
                     padding: 3% 0 3% 3%;
                     transition: 2s;
+                    color: red;
 
                     &:hover {
                         background: none;
@@ -835,7 +893,8 @@ section {
                                     filter: grayscale(0%);
                                 }
 
-                                .fab, .fas {
+                                .fab,
+                                .fas {
                                     font-size: 50px;
                                     margin: 0;
                                 }
@@ -852,7 +911,7 @@ section {
                 margin-top: 100px;
                 margin-bottom: 0;
                 border: none;
-                background-image: linear-gradient(to top left, #ffffff 50%, #1a1b1e 50%);
+                background-image: linear-gradient(to top left, #ffffff 50%, #191a1e 50%);
 
                 .site-container {
                     height: 40%;
@@ -945,6 +1004,12 @@ section {
                 .smallbox {
                     width: 100%;
                     height: 40%;
+                    
+                    &:hover {
+                        .innerTag {
+                            color: pink;
+                        }
+                    }
 
                     .innerTag {
                         width: 45%;
@@ -1042,7 +1107,8 @@ section {
     transition: 2s;
 
     .icons {
-        .fab, .fas {
+        .fab,
+        .fas {
             text-decoration: none;
             font-size: 40px;
         }
@@ -1062,3 +1128,15 @@ section {
         color: red;
     }
 }
+
+// @media screen and (min-width: 2000px) {
+//     .section2 {
+//         .about-container1 {
+//             .contain2 {
+//                 .about-tag {
+//                     color: blue !important;
+//                 }
+//             }
+//         }
+//     }
+// }
