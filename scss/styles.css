@@ -921,7 +921,6 @@ section {
     padding: 3% 0 3% 3%;
     -webkit-transition: 2s;
     transition: 2s;
-    color: red;
   }
   .section2 .about-container1 .contain2 .about-tag:hover {
     background: none;
@@ -1372,11 +1371,9 @@ section {
 @media screen and (max-width: 768px) {
   .headline div {
     font-size: 120px;
-    color: blue;
   }
   .tagline {
     top: 500;
-    color: red;
   }
 }
 /*# sourceMappingURL=styles.css.map */

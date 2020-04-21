@@ -725,7 +725,6 @@ section {
                     border-left: 8px solid black;
                     padding: 3% 0 3% 3%;
                     transition: 2s;
-                    color: red;
 
                     &:hover {
                         background: none;
@@ -1119,13 +1118,11 @@ section {
     .headline {
         div {
             font-size: 120px;
-            color: blue;
         }
     }
 
     .tagline {
         top: 500;
-        color: red;
     }
 }
 
