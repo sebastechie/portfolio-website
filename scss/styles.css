@@ -56,6 +56,18 @@ nav div ul {
           align-items: center;
 }
 
+nav div ul li:nth-child(1) :hover {
+  color: #35a7ff;
+}
+
+nav div ul li:nth-child(2) :hover {
+  color: #9ee493;
+}
+
+nav div ul li:nth-child(3) :hover {
+  color: #b2675e;
+}
+
 nav div ul li {
   display: inline-block;
   text-align: center;
@@ -69,8 +81,6 @@ nav div ul li {
 
 nav div ul li a {
   color: inherit;
-  -webkit-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
   font-weight: 800;
 }
 
@@ -97,8 +107,12 @@ section {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  background-image: url("../images/p112.jpg");
-  background-color: rgba(20, 20, 20, 0.8);
+  background-image: url("../images/landing1.jpg");
+  background-image: url("../images/landing2.jpg");
+  background: -webkit-gradient(linear, right bottom, left top, from(rgba(26, 188, 156, 0.7)), to(rgba(231, 76, 60, 0.7))), url("../images/landing2.jpg");
+  background: linear-gradient(to top left, rgba(26, 188, 156, 0.7), rgba(231, 76, 60, 0.7)), url("../images/landing2.jpg");
+  background: -webkit-gradient(linear, right bottom, left top, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../images/landing2.jpg");
+  background: linear-gradient(to top left, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/landing2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -118,10 +132,9 @@ section {
 }
 
 .section1 .tagline {
-  font-family: "Poiret One", cursive;
-  color: aliceblue;
   letter-spacing: 2px;
   font-size: 21px;
+  color: aliceblue;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -132,10 +145,7 @@ section {
   position: absolute;
   top: 400;
   width: 100%;
-}
-
-.section1 .tagline .tag {
-  text-align: center;
+  z-index: -1;
 }
 
 .section1 .scroll {
@@ -143,7 +153,7 @@ section {
   font-size: 18px;
   color: aliceblue;
   width: 100%;
-  height: 60px;
+  height: 260px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -163,6 +173,14 @@ section {
   -webkit-animation: blink 1s linear infinite;
           animation: blink 1s linear infinite;
   font-size: 21px;
+}
+
+.section1 .scroll a {
+  color: aliceblue;
+}
+
+.section1 .scroll a:hover {
+  text-decoration: none;
 }
 
 @-webkit-keyframes blink {
@@ -229,6 +247,10 @@ section {
 .section2 .about-container1 .about-tag .about-a .tag {
   line-height: 2;
   letter-spacing: 1.2;
+}
+
+.section2 .about-container1 .about-tag .about-a .tag .hey {
+  display: none;
 }
 
 .section2 .about-container1 .about-tag .img-contain {
@@ -390,6 +412,7 @@ section {
   text-align: center;
   border: 0.5px solid white;
   padding: 7px;
+  font-weight: 1000;
 }
 
 .section2 .frame .websitelink-mobile:nth-child(2) a {
@@ -711,7 +734,6 @@ section {
 
 @media screen and (min-width: 768px) {
   * {
-    font-family: "Poiret One", cursive;
     scroll-behavior: smooth;
   }
   body {
@@ -755,11 +777,6 @@ section {
     padding: 5px;
     font-size: 1.2rem;
     letter-spacing: 7px;
-  }
-  nav div li a:hover {
-    padding: 5px;
-    color: black;
-    background-color: white;
   }
   .section1 {
     display: -webkit-box;
@@ -805,7 +822,6 @@ section {
     width: 100%;
     min-width: 80%;
     position: absolute;
-    z-index: -1;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -819,7 +835,7 @@ section {
     font-family: "Montserrat", sans-serif;
     letter-spacing: 17px;
     text-align: center;
-    font-size: 8rem;
+    font-size: 120px;
   }
   .section1 #particles-js .tagline {
     letter-spacing: 3px;
@@ -827,13 +843,11 @@ section {
     top: 570;
     font-family: "Julius Sans One", sans-serif;
     letter-spacing: 6px;
-    z-index: -1;
-    font-size: 2rem;
+    font-size: 35px;
   }
   .section1 .scrollwrap {
     width: 100%;
     min-width: 1200px;
-    height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -854,13 +868,24 @@ section {
   }
   .section1 .scroll:hover .scrollarrow {
     color: blue;
-    -webkit-transform: rotate(270deg);
-            transform: rotate(270deg);
     -webkit-transition: 0.5s;
     transition: 0.5s;
+    cursor: default;
+    -webkit-animation: unset;
+            animation: unset;
+  }
+  .section1 .scroll:hover .scrolltext {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    -webkit-animation: blink 1s linear infinite;
+            animation: blink 1s linear infinite;
   }
   .section1 .scroll .scrolltext {
     letter-spacing: 10px;
+    font-family: "Julius Sans One", sans-serif;
+  }
+  .section1 .scroll .scrolltext:hover {
+    cursor: default;
   }
   .section1 .scroll .scrollarrow {
     -webkit-transform: rotate(90deg);
@@ -943,8 +968,7 @@ section {
   }
   .section2 .about-container1 .contain2 .about-tag .tag {
     font-size: 18px;
-    letter-spacing: 0.8px;
-    font-family: "DM sans", cursive;
+    letter-spacing: 1.4px;
   }
   .section2 .about-container1 .contain2 .about-tag .img-contain {
     height: 200px;
@@ -1040,6 +1064,10 @@ section {
     background-color: #c48f27;
     border-top: 0.5px solid black;
     border-bottom: 0.5px solid black;
+  }
+  .section2 .about-container1 .contain2 .else-contain .inner .left .headline2 .moreme {
+    font-size: 14px;
+    font-weight: 800;
   }
   .section2 .about-container1 .contain2 .else-contain .inner .left .headline2 .ic {
     display: -webkit-box;
@@ -1351,8 +1379,13 @@ section {
   margin: 5%;
 }
 
-.arrowbreak .fas {
+.arrowbreak a i {
   font-size: 45px;
+}
+
+.arrowbreak a i:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 
 #contact {
@@ -1366,14 +1399,5 @@ section {
 #contact .icons .fas {
   text-decoration: none;
   font-size: 40px;
-}
-
-@media screen and (max-width: 768px) {
-  .headline div {
-    font-size: 120px;
-  }
-  .tagline {
-    top: 500;
-  }
 }
 /*# sourceMappingURL=styles.css.map */
