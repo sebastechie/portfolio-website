@@ -126,7 +126,8 @@ section {
         justify-content: center;
         align-items: center;
         position: absolute;
-        top: 470;
+        top: 440;
+        // top: 470;
 
         .scrollarrow {
             color: yellow;
@@ -448,9 +449,33 @@ section {
                     .pro-comet {
                         height: 60px;
                         width: 60px;
+                        filter: grayscale(50%);
 
                         &:hover {
-                            filter: grayscale(50%);
+                            filter: grayscale(0%);
+                            animation: shake 0.6s infinite;
+
+                            @keyframes shake {
+                                0% {
+                                    transform: translate(0, 0) rotate(0deg);
+                                }
+                                
+                                25% {
+                                    transform: translate(1px, 1px) rotate(1deg);
+                                }
+
+                                50% {
+                                    transform: translate(-1px, 1px) rotate(-1deg);
+                                }
+
+                                75% {
+                                    transform: translate(2px, -1px) rotate(2deg);
+                                }
+
+                                100% {
+                                    transform: translate(-1px, 1px) rotate(-1deg);
+                                }
+                            }
                         }
                     }
 
@@ -473,6 +498,11 @@ section {
 
                     .pro-tag {
                         margin-bottom: 15%;
+
+                        span {
+                            font-size: 13px;
+                            font-style: italic;
+                        }
                     }
 
                     .code {
@@ -494,6 +524,10 @@ section {
                     height: 100%;
                     width: 100%;
                 }
+            }
+
+            .fight {
+                pointer-events: none;
             }
         }
     }
@@ -1061,8 +1095,16 @@ section {
 
                             .pro-tag {
                                 margin-bottom: 50px;
+
+                                span {
+                                    display: none;
+                                }
                             }
                         }
+                    }
+
+                    .fight {
+                        pointer-events: unset;
                     }
                 }
             }

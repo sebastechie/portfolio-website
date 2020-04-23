@@ -21,18 +21,16 @@
 </head>
 
 <body>
-    <section class="section1" id="secone">
+    <section class="section1" id="home">
         <nav>
             <div>
                 <ul>
-                    <li><a href="#header">ABOUT</a></li>
-                    <li><a href="#project-page">PROJECTS</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#projects">PROJECTS</a></li>
                     <li><a href="#contact">CONTACT</a></li>
                 </ul>
             </div>
         </nav>
-        <!-- <div id="particles-js" data-tilt data-tilt-gyroscope="true" data-tilt-max="2" data-tit-gyroscope="true"
-        data-tilt-gyroscopeMinAngleX="-45" data-tilt-speed="800" data-tilt-perspective="700"> -->
         <div id="particles-js">
             <div class="headline" data-aos="fade-left">
                 <div>STEPHEN</div>
@@ -44,8 +42,8 @@
         </div>
         <div class="scrollwrap">
             <div class="scroll">
-                <div class="scrollarrow"><i class="fas fa-sort-down" data-aos="fade-left"></i></div>
-                <div class="scrolltext" data-aos="fade-left"><a href="#header">scroll down</a></div>
+                <div class="scrollarrow"><i class="fas fa-sort-down"></i></div>
+                <div class="scrolltext"><a href="#header">scroll down</a></div>
             </div>
         </div>
     </section>
@@ -54,7 +52,7 @@
             <div class="contain2">
                 <div class="about-tag" data-aos="fade-left">
                     <div class="about-a">
-                        <div class="head-tag" id="header">
+                        <div class="head-tag" id="about">
                             <h1>About Me</h1>
                             <br>
                             <div data-aos="fade-right">HI, I'M STEPHEN.</div>
@@ -147,7 +145,7 @@
     </section>
     <section class="section3">
         <div class="headline3">
-            <div class="project-title" id="project-page">PROJECTS</div>
+            <div class="project-title" id="projects">PROJECTS</div>
             <div class="project-list" data-aos="fade-up" data-aos-anchor-placement="top-center">Here's</div>
             <div class="project-list" data-aos="fade-up" data-aos-anchor-placement="top-center">some</div>
             <div class="project-list" data-aos="fade-up" data-aos-anchor-placement="top-center">recent</div>
@@ -174,12 +172,13 @@
                     </div>
                 </div>
                 <div class="smallbox">
-                    <div class="in">
+                    <div class="in fight">
                         <img class="project-image" src="./images/fight1.png" alt="Fighting game image">
                         <a href="https://sebastechie.github.io/project-fighto/" target="_blank">
                             <div class="innerTag">
                                 <div class="pro-title">PROJECT FIGHTO</div>
-                                <div class="pro-tag">Game made with vanilla Javascript</div>
+                                <div class="pro-tag">Game made with vanilla JavaScript<br><span>(not optimised for
+                                        mobile)</span></div>
                                 <a href="https://github.com/sebastechie/project-fighto" target="_blank">
                                     <div class="code"><i class="fas fa-code"></i></div>
                                 </a>
@@ -193,7 +192,7 @@
                         <a href="https://sebastechie.github.io/rps-challenge/" target="_blank">
                             <div class="innerTag">
                                 <div class="pro-title">ROCK PAPER SCISSORS</div>
-                                <div class="pro-tag">Game made with vanilla Javascript</div>
+                                <div class="pro-tag">Game made with vanilla JavaScript</div>
                                 <a href="https://github.com/sebastechie/rps-challenge" target="_blank">
                                     <div class="code"><i class="fas fa-code"></i></div>
                                 </a>
@@ -236,7 +235,7 @@
                         <a href="https://sebastechie.github.io/tictactoe/" target="_blank">
                             <div class="innerTag">
                                 <div class="pro-title">TIC TAC TOE</div>
-                                <div class="pro-tag">Game made with vanilla Javascript</div>
+                                <div class="pro-tag">Game made with vanilla JavaScript</div>
                                 <a href="https://github.com/sebastechie/tictactoe" target="_blank">
                                     <div class="code"><i class="fas fa-code"></i></div>
                                 </a>
@@ -265,7 +264,7 @@
     </section>
     <section>
         <div class="arrowbreak">
-            <a href="#secone"><i class="fas fa-caret-square-up"></i></a>
+            <a href="#home"><i class="fas fa-caret-square-up"></i></a>
         </div>
     </section>
     <footer id="contact">
@@ -289,17 +288,33 @@
         <div class="copyright">
             <div>&copy; 2020 Stephen Arambulo</div>
     </footer>
-    <script type="text/javascript" src="parallax.js"></script>
-    <!-- <script type="text/javascript">
+
+
+
+    <script type="text/JavaScript" src="parallax.js"></script>
+    <!-- <script type="text/JavaScript">
         const scene = document.getElementById('scene');
         const parallax = new Parallax(scene);
     </script> -->
 
     <script src="app.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script> -->
-    <script type="text/javascript">
+    <script type="text/JavaScript">
         AOS.init();
     </script>
+
+    <script src="https://cdnjs.cloudFlare.com/ajax/libs/three.js/109/three.min.js"></script>
+    <script src="https://cdnjs.cloudFlare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+
+    <script>  //NOT WORKING 
+        const hoverDistort = new hoverEffect({
+            parent: document.querySelector('.tag'),
+            intensity: 0.5,
+            displacementImage: "", 
+        })
+    </script>
+
+
 </body>
 
 </html>
