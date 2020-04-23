@@ -231,7 +231,7 @@ section {
 
 .section2 .about-container1 .about-tag .about-a .head-tag h1 {
   color: grey;
-  margin: 40px 0;
+  margin: 200px 0 40px 0;
 }
 
 .section2 .about-container1 .about-tag .about-a .head-tag div {
@@ -599,9 +599,9 @@ section {
   text-decoration: none;
   text-align: center;
   font-size: 20px;
-  padding: 10px;
-  border: 0.5px solid white;
-  border-radius: 5px;
+  padding: 11px;
+  border: 1px solid white;
+  border-radius: 4px;
 }
 
 .section4 .sec4-container .smallbox .in .innerTag .code:hover {
@@ -768,6 +768,7 @@ section {
     z-index: 1;
     -webkit-transition: 0.3s;
     transition: 0.3s;
+    background-attachment: fixed;
   }
   .section1:hover {
     -webkit-box-shadow: 0px -10px 40px lightblue;
@@ -926,6 +927,7 @@ section {
   }
   .section2 .about-container1 .contain2 .about-tag .head-tag {
     letter-spacing: 8px;
+    margin: unset;
   }
   .section2 .about-container1 .contain2 .about-tag .about-a {
     display: -webkit-box;
@@ -1026,17 +1028,17 @@ section {
             justify-content: center;
     border-radius: 15px;
     padding: 15px;
-    -webkit-animation: blink 2s linear infinite;
-            animation: blink 2s linear infinite;
+    -webkit-animation: blink 1.5s linear infinite;
+            animation: blink 1.5s linear infinite;
   }
   @-webkit-keyframes blink {
-    50% {
-      opacity: 0;
+    90% {
+      opacity: 0.2;
     }
   }
   @keyframes blink {
-    50% {
-      opacity: 0;
+    90% {
+      opacity: 0.2;
     }
   }
   .section2 .about-container1 .contain2 .else-contain .inner .left .headline2:hover {

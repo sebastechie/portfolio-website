@@ -52,14 +52,14 @@
     <section class="section2">
         <section class="about-container1">
             <div class="contain2">
-                <div class="about-tag" data-aos="fade-left">
+                <div class="about-tag" data-aos="fade-left" id="scene">
                     <div class="about-a">
                         <div class="head-tag" id="header">
                             <h1>About Me</h1>
                             <br>
-                            <div data-aos="fade-right">HI, I'M STEPHEN.</div>
+                            <div data-depth="1">HI, I'M STEPHEN.</div>
                         </div>
-                        <div class="tag">
+                        <div class="tag" data-depth="3">
                             <div>
                                 <br>
                                 I am a Junior Software Developer based in London, England. With a passion for all things
@@ -80,9 +80,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="img-contain">
+                    <div class="img-contain" data-depth="1.5">
                         <div>
-                            <img src="./images/meimg.jpg" alt="Stephen">
+                            <img src="./images/meimg.jpg" alt="Stephen" data-depth="1.5">
                         </div>
                     </div>
                 </div>
@@ -96,7 +96,8 @@
                                     <br>
                                     <!-- <br> -->
                                     The following sections show the languages that I've
-                                    learnt and projects that I've produced throughout the course - <span>including this site</span>.
+                                    learnt and projects that I've produced throughout the course - <span>including this
+                                        site</span>.
                                 </div>
                                 <div class="ic">
                                     <i class="fas fa-user-graduate"></i>
@@ -289,9 +290,14 @@
         <div class="copyright">
             <div>&copy; 2020 Stephen Arambulo</div>
     </footer>
-    <!-- <script type="text/javascript" src="particles.js"></script> -->
-    <script type="text/javascript" src="app.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+    <script type="text/javascript" src="parallax.js"></script>
+    <!-- <script type="text/javascript">
+        const scene = document.getElementById('scene');
+        const parallax = new Parallax(scene);
+    </script> -->
+
+    <script src="app.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script> -->
     <script type="text/javascript">
         AOS.init();
     </script>
