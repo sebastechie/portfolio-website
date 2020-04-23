@@ -749,7 +749,11 @@ section {
 
                     .head-tag {
                         letter-spacing: 8px;
-                        margin: unset;
+
+                        h1 {
+                            margin: 40px 0;
+                        }
+                        
                     }
 
                     .about-a {

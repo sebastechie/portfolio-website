@@ -927,7 +927,9 @@ section {
   }
   .section2 .about-container1 .contain2 .about-tag .head-tag {
     letter-spacing: 8px;
-    margin: unset;
+  }
+  .section2 .about-container1 .contain2 .about-tag .head-tag h1 {
+    margin: 40px 0;
   }
   .section2 .about-container1 .contain2 .about-tag .about-a {
     display: -webkit-box;
