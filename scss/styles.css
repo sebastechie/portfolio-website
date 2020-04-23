@@ -1109,9 +1109,10 @@ section {
     cursor: none;
     height: 500px;
     background-color: #c48f27;
-    background-color: rgba(0, 0, 0, 0.1);
     -webkit-animation: unset;
             animation: unset;
+    border-radius: 2px;
+    border: 0.5px solid black;
   }
   .section2 .about-container1 .contain2 .else-contain .inner .left .headline2 .moreme {
     font-size: 14px;
@@ -1205,12 +1206,6 @@ section {
     transition: 1s;
     height: 100%;
     cursor: default;
-    -webkit-filter: grayscale(100%);
-            filter: grayscale(100%);
-  }
-  .section2 .about-container1 .contain2 .else-contain .inner .right .skillsContain:hover {
-    -webkit-filter: grayscale(0%);
-            filter: grayscale(0%);
   }
   .section2 .about-container1 .contain2 .else-contain .inner .right .skillsContain .fab,
   .section2 .about-container1 .contain2 .else-contain .inner .right .skillsContain .fas {

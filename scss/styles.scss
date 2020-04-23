@@ -459,7 +459,7 @@ section {
                                 0% {
                                     transform: translate(0, 0) rotate(0deg);
                                 }
-                                
+
                                 25% {
                                     transform: translate(1px, 1px) rotate(1deg);
                                 }
@@ -787,7 +787,6 @@ section {
                         h1 {
                             margin: 40px 0;
                         }
-                        
                     }
 
                     .about-a {
@@ -877,8 +876,9 @@ section {
                                     cursor: none;
                                     height: 500px;
                                     background-color: #c48f27;
-                                    background-color: rgba(black, 0.1);
                                     animation: unset;
+                                    border-radius: 2px;
+                                    border: 0.5px solid black;
                                 }
 
                                 .moreme {
@@ -951,11 +951,6 @@ section {
                                 transition: 1s;
                                 height: 100%;
                                 cursor: default;
-                                filter: grayscale(100%);
-
-                                &:hover {
-                                    filter: grayscale(0%);
-                                }
 
                                 .fab,
                                 .fas {
