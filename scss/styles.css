@@ -13,6 +13,11 @@
   display: none;
 }
 
+body {
+  background-image: url("../images/fall.gif");
+  background-size: contain;
+}
+
 nav {
   height: 80px;
   width: 100%;
@@ -112,6 +117,13 @@ section {
   background-position: center;
 }
 
+.section1 #particles-js {
+  background-image: url("../images/fall.gif");
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
 .section1 .headline {
   top: 200;
   width: 100%;
@@ -175,6 +187,13 @@ section {
 
 .section1 .scroll a:hover {
   text-decoration: none;
+}
+
+.section1 .scroll .scrolltext span {
+  color: grey;
+  font-style: italic;
+  -webkit-animation: blink 4s linear infinite;
+          animation: blink 4s linear infinite;
 }
 
 @-webkit-keyframes blink {
@@ -265,11 +284,16 @@ section {
   width: 150px;
   left: 0;
   opacity: 0.3;
-  pointer-events: none;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
 }
 
 .section2 .about-container1 .about-tag .img-contain img:hover {
   opacity: 0.7;
+  -webkit-transform: rotate(25deg);
+          transform: rotate(25deg);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .section2 .about-container1 .else-contain .inner .left {
@@ -447,6 +471,7 @@ section {
 .section3 .headline3 .project-title {
   border-top: 1px solid black;
   margin: 50px 0 100px 0;
+  padding: 15%;
   height: 50px;
   width: 100%;
   display: -webkit-box;
@@ -527,7 +552,6 @@ section {
   position: relative;
   -webkit-transition: 1s;
   transition: 1s;
-  background-color: slategrey;
 }
 
 .section4 .sec4-container .smallbox .in {
@@ -724,7 +748,7 @@ section {
 #contact:hover {
   -webkit-transition: 2s;
   transition: 2s;
-  background-color: #bfb5af;
+  background-color: rgba(191, 181, 175, 0.5);
 }
 
 #contact .icons {
@@ -752,7 +776,7 @@ section {
 
 #contact .icons .fab:hover,
 #contact .icons .fas:hover {
-  opacity: 0.9;
+  opacity: 0.7;
   cursor: pointer;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -851,6 +875,7 @@ section {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+    background-attachment: fixed;
   }
   .section1 #particles-js .headline {
     height: 70%;
@@ -894,11 +919,15 @@ section {
             align-items: center;
   }
   .section1 .scroll {
-    width: 300px;
-    top: 450;
+    width: 400px;
+    top: 400;
     -webkit-transform: rotate(270deg);
             transform: rotate(270deg);
     -webkit-transition: 0.5s;
+    transition: 0.5s;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
     transition: 0.5s;
   }
   .section1 .scroll:hover .scrollarrow {
@@ -910,13 +939,26 @@ section {
             animation: unset;
   }
   .section1 .scroll .scrolltext {
+    width: 500px;
     letter-spacing: 10px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .section1 .scroll .scrolltext span {
+    display: none;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
   }
   .section1 .scroll .scrolltext:hover {
     -webkit-transition: 0.5s;
     transition: 0.5s;
     -webkit-animation: blink 1s linear infinite;
             animation: blink 1s linear infinite;
+  }
+  .section1 .scroll .scrolltext:hover span {
+    display: unset;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
   }
   .section1 .scroll .scrollarrow {
     -webkit-transform: rotate(90deg);
@@ -1206,6 +1248,9 @@ section {
     transition: 1s;
     height: 100%;
     cursor: default;
+    background-image: url("../images/fall.gif");
+    background-size: contain;
+    background-attachment: fixed;
   }
   .section2 .about-container1 .contain2 .else-contain .inner .right .skillsContain .fab,
   .section2 .about-container1 .contain2 .else-contain .inner .right .skillsContain .fas {
@@ -1269,8 +1314,12 @@ section {
     width: 100%;
     padding-top: 300px;
     height: 900px;
-    margin-bottom: 200px;
+    margin: 300px 0 200px 0;
     overflow: unset;
+    background-image: url("../images/art6.jpg");
+    background-attachment: fixed;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
   .section3 .headline3 {
     height: 80%;
@@ -1280,6 +1329,7 @@ section {
     margin: 90px 0 50px 0;
     font-size: 50px;
     letter-spacing: 7px;
+    padding: 5%;
   }
   .section3 .headline3 .project-list {
     font-size: 60px;
@@ -1292,7 +1342,7 @@ section {
   /* ======================  SECTION 4 =================================================== */
   .section4 {
     width: 100%;
-    margin: 200px 0;
+    margin: 150px 0;
     padding: 5%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1316,7 +1366,7 @@ section {
     -webkit-transition: 0.5s;
     transition: 0.5s;
     padding: 50px;
-    background-color: #bfb5af;
+    background-color: rgba(191, 181, 175, 0.5);
   }
   .section4 .sec4-container .row1,
   .section4 .sec4-container .row2 {

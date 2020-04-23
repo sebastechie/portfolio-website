@@ -13,6 +13,11 @@
     display: none;
 }
 
+body {
+    background-image: url("../images/fall.gif");
+    background-size: contain;
+}
+
 nav {
     height: 80px;
     width: 100%;
@@ -90,6 +95,13 @@ section {
     background-repeat: no-repeat;
     background-position: center;
 
+    #particles-js {
+        background-image: url("../images/fall.gif");
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+    }
+
     .headline {
         top: 200;
         width: 100%;
@@ -141,6 +153,12 @@ section {
             &:hover {
                 text-decoration: none;
             }
+        }
+
+        .scrolltext span {
+            color: grey;
+            font-style: italic;
+            animation: blink 4s linear infinite;
         }
     }
 
@@ -207,10 +225,12 @@ section {
                     width: 150px;
                     left: 0;
                     opacity: 0.3;
-                    pointer-events: none;
+                    transition: 0.1s;
 
                     &:hover {
                         opacity: 0.7;
+                        transform: rotate(25deg);
+                        transition: 0.3s;
                     }
                 }
             }
@@ -365,6 +385,7 @@ section {
         .project-title {
             border-top: 1px solid black;
             margin: 50px 0 100px 0;
+            padding: 15%;
             height: 50px;
             width: 100%;
             display: flex;
@@ -410,7 +431,6 @@ section {
     margin-bottom: 170px;
 
     .sec4-container {
-        // border: 2px solid blue;
         .smallbox {
             height: 320px;
             max-height: 320px;
@@ -422,7 +442,6 @@ section {
             flex-direction: column;
             position: relative;
             transition: 1s;
-            background-color: slategrey;
 
             .in {
                 height: 100%;
@@ -570,7 +589,7 @@ section {
 
     &:hover {
         transition: 2s;
-        background-color: #bfb5af;
+        background-color: rgba(#bfb5af, 0.5);
     }
 
     .icons {
@@ -588,7 +607,7 @@ section {
             color: #1a1b1e;
 
             &:hover {
-                opacity: 0.9;
+                opacity: 0.7;
                 cursor: pointer;
                 transition: 0.3s;
                 color: white;
@@ -637,12 +656,6 @@ section {
                     padding: 5px;
                     font-size: 1.2rem;
                     letter-spacing: 7px;
-
-                    // &:hover {
-                    //     // padding: 5px;
-                    //     // // color: black;
-                    //     // // background-color: white;
-                    // }
                 }
             }
         }
@@ -669,6 +682,7 @@ section {
             justify-content: center;
             align-items: center;
             flex-direction: column-reverse;
+            background-attachment: fixed;
 
             .headline {
                 height: 70%;
@@ -710,9 +724,12 @@ section {
 
         .scroll {
             // border: 2px solid yellow;
-            width: 300px;
-            top: 450;
+            width: 400px;
+            // height: 100px;
+            top: 400;
             transform: rotate(270deg);
+            transition: 0.5s;
+            align-items: flex-end;
             transition: 0.5s;
 
             &:hover {
@@ -726,11 +743,23 @@ section {
 
             .scrolltext {
                 // border: 2px solid aqua;
+                width: 500px;
                 letter-spacing: 10px;
+                transition: 0.5s;
+
+                span {
+                    display: none;
+                    transition: 0.5s;
+                }
 
                 &:hover {
                     transition: 0.5s;
                     animation: blink 1s linear infinite;
+
+                    span {
+                        display: unset;
+                        transition: 0.5s;
+                    }
                 }
             }
 
@@ -951,6 +980,9 @@ section {
                                 transition: 1s;
                                 height: 100%;
                                 cursor: default;
+                                background-image: url("../images/fall.gif");
+                                background-size: contain;
+                                background-attachment: fixed;
 
                                 .fab,
                                 .fas {
@@ -1013,8 +1045,12 @@ section {
         width: 100%;
         padding-top: 300px;
         height: 900px;
-        margin-bottom: 200px;
+        margin: 300px 0 200px 0;
         overflow: unset;
+        background-image: url('../images/art6.jpg');
+        background-attachment: fixed;
+        background-size: contain;
+        background-repeat: no-repeat;
 
         .headline3 {
             height: 80%;
@@ -1024,6 +1060,7 @@ section {
                 margin: 90px 0 50px 0;
                 font-size: 50px;
                 letter-spacing: 7px;
+                padding: 5%;
             }
 
             .project-list {
@@ -1042,9 +1079,8 @@ section {
 
     .section4 {
         width: 100%;
-        margin: 200px 0;
+        margin: 150px 0;
         padding: 5%;
-        // border: 2px solid red;
         display: flex;
         justify-content: center;
 
@@ -1056,7 +1092,8 @@ section {
             justify-content: center;
             transition: 0.5s;
             padding: 50px;
-            background-color: #bfb5af;
+            // background-color: #bfb5af;
+            background-color: rgba(#bfb5af, 0.5);
 
             .row1,
             .row2 {
