@@ -1107,8 +1107,8 @@ section {
     height: 15px;
     text-align: justify;
     color: black;
-    -webkit-transition: 1s;
-    transition: 1s;
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
     margin-left: 10px;
     background-color: #191a1e;
     overflow: hidden;
@@ -1147,7 +1147,6 @@ section {
     -webkit-animation: unset;
             animation: unset;
     border-radius: 2px;
-    border: 0.5px solid black;
   }
   .section2 .about-container1 .contain2 .else-contain .inner .left .headline2 .moreme {
     font-size: 14px;
