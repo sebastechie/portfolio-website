@@ -464,7 +464,7 @@ section {
 .section3 .headline3 .project-title {
   border-top: 1px solid black;
   margin: 50px 0 100px 0;
-  padding: 15%;
+  padding: 8%;
   height: 50px;
   width: 100%;
   display: -webkit-box;
@@ -1139,8 +1139,8 @@ section {
   }
   .section2 .about-container1 .contain2 .else-contain .inner .left .headline2:hover {
     color: black;
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
     cursor: none;
     height: 500px;
     background-color: #c48f27;

@@ -32,12 +32,12 @@
             </div>
         </nav>
         <div id="particles-js">
-            <div class="headline" data-aos="fade-left">
+            <div class="headline rellax" data-rellax-speed="8">
                 <div>STEPHEN</div>
                 <div>ARAMBULO</div>
             </div>
-            <div class="tagline">
-                <p class="tag" data-aos="fade-right">JUNIOR SOFTWARE DEVELOPER</p>
+            <div class="tagline rellax" data-rellax-speed="3">
+                <p class="tag"></p>JUNIOR SOFTWARE DEVELOPER</p>
             </div>
         </div>
         <div class="scrollwrap">
@@ -151,7 +151,7 @@
             <div class="project-list" data-aos="fade-up" data-aos-anchor-placement="top-center">some</div>
             <div class="project-list" data-aos="fade-up" data-aos-anchor-placement="top-center">recent</div>
             <div class="project-list" data-aos="fade-up" data-aos-anchor-placement="top-center">work.</div>
-            <div class="see-below" data-aos="fade-up" data-aos-anchor-placement="top-center">see below.</div>
+            <div class="see-below" data-aos="fade-right">see below.</div>
         </div>
     </section>
     <section class="section4">
@@ -290,31 +290,17 @@
             <div>&copy; 2020 Stephen Arambulo</div>
     </footer>
 
-
-
-    <script type="text/JavaScript" src="parallax.js"></script>
-    <!-- <script type="text/JavaScript">
-        const scene = document.getElementById('scene');
-        const parallax = new Parallax(scene);
-    </script> -->
-
     <script src="app.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script> -->
+    <script src="rellax.min.js"></script>
     <script type="text/JavaScript">
         AOS.init();
     </script>
 
     <script src="https://cdnjs.cloudFlare.com/ajax/libs/three.js/109/three.min.js"></script>
     <script src="https://cdnjs.cloudFlare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
-
-    <script>  //NOT WORKING 
-        const hoverDistort = new hoverEffect({
-            parent: document.querySelector('.tag'),
-            intensity: 0.5,
-            displacementImage: "",
-        })
+    <script>
+        const rellax = new Rellax('.rellax');
     </script>
-
 
 </body>
 
