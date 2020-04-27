@@ -13,11 +13,6 @@
   display: none;
 }
 
-body {
-  background-image: url("../images/fall.gif");
-  background-size: contain;
-}
-
 nav {
   height: 80px;
   width: 100%;
@@ -118,8 +113,6 @@ section {
 }
 
 .section1 #particles-js {
-  background-image: url("../images/fall.gif");
-  background-size: cover;
   height: 100%;
   width: 100%;
 }
@@ -1129,7 +1122,7 @@ section {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    border-radius: 15px;
+    border-radius: 250px;
     padding: 15px;
     -webkit-animation: blink 1.5s linear infinite;
             animation: blink 1.5s linear infinite;
@@ -1248,9 +1241,8 @@ section {
     transition: 1s;
     height: 100%;
     cursor: default;
+    background-size: cover;
     background-image: url("../images/fall.gif");
-    background-size: contain;
-    background-attachment: fixed;
   }
   .section2 .about-container1 .contain2 .else-contain .inner .right .skillsContain .fab,
   .section2 .about-container1 .contain2 .else-contain .inner .right .skillsContain .fas {
